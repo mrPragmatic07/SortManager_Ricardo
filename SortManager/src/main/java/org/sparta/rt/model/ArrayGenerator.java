@@ -1,4 +1,4 @@
-package org.sparta.rt;
+package org.sparta.rt.model;
 import java.util.Random;
 
 public class ArrayGenerator {

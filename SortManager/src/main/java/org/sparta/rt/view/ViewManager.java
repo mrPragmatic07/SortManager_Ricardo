@@ -1,4 +1,6 @@
-package org.sparta.rt;
+package org.sparta.rt.view;
+
+import org.sparta.rt.model.BubbleSort;
 
 import java.util.Scanner;
 
@@ -13,6 +15,7 @@ public class ViewManager {
         System.out.println("3. Tree Sort");
         System.out.println("4. Selection Sort");
         System.out.println("5. Insertion Sort");
+        System.out.print("Enter here: ");
     }
 
     public static void askSize() {
@@ -49,7 +52,16 @@ public class ViewManager {
     public static void displayArray(int[] array) {
 
         for (int i=0; i<array.length; i++) {
-            System.out.print("Index[" + i + "] = " + array[i] + " | ");
+            System.out.println("Index[" + i + "] = " + array[i]);
+        }
+        System.out.println("");
+    }
+
+    // Call Sorter
+    public static void callSorter(int algoOption, int[] array) {
+
+        switch (algoOption) {
+            case 1 -> BubbleSort.executeBubbleSort(array);
         }
     }
 }

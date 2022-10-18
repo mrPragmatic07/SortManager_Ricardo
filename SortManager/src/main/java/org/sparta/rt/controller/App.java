@@ -1,4 +1,4 @@
-package org.sparta.rt;
+package org.sparta.rt.controller;
 
 public class App {
 
