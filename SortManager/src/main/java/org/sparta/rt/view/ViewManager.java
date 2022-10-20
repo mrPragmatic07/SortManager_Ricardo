@@ -1,6 +1,9 @@
 package org.sparta.rt.view;
 
 import org.sparta.rt.model.BubbleSort;
+import org.sparta.rt.model.InsertionSort;
+import org.sparta.rt.model.MergeSort;
+import org.sparta.rt.model.SelectionSort;
 
 import java.util.Scanner;
 
@@ -52,7 +55,7 @@ public class ViewManager {
     public static void displayArray(int[] array) {
 
         for (int i=0; i<array.length; i++) {
-            System.out.println("Index[" + i + "] = " + array[i]);
+            System.out.println("Array[" + i + "] = " + array[i]);
         }
         System.out.println("");
     }
@@ -62,6 +65,9 @@ public class ViewManager {
 
         switch (algoOption) {
             case 1 -> BubbleSort.executeBubbleSort(array);
+            case 2 -> MergeSort.executeMergeSort(array, 0, array.length - 1);
+            case 4 -> SelectionSort.executeSelectionSort(array);
+            case 5 -> InsertionSort.executeInsertionSort(array);
         }
     }
 }

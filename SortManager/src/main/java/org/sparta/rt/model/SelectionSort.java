@@ -16,8 +16,14 @@ public class SelectionSort {
             // Iterate through the unsorted elements only
             for(int j = i + 1; j < array.length; j++) {
 
-                //
+                //set the new minimum value
+                // if the saved minimum value is higher than the current index value
+                if(array[j] < array[minIndex])
+                    minIndex = j;
             }
+            //Swap the first unsorted element
+            // with the minimum value
+            Swapper.swap(array, i, minIndex);
         }
     }
 }
