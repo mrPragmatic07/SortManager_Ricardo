@@ -42,7 +42,10 @@ public class SortManager {
             ViewManager.displayArray(randIntArray);
 
             // Sort the Array
+            final long startTime2 = System.currentTimeMillis();
             ViewManager.callSorter(ViewManager.algorithmOption, randIntArray);
+            final long elapsedTimeMillis2 = System.currentTimeMillis() - startTime2;
+            System.out.println("Time taken to sort Array: " + elapsedTimeMillis2 + " MilliSeconds");
 
             // If user chooses the Binary tree
             if (ViewManager.algorithmOption != 3) {
