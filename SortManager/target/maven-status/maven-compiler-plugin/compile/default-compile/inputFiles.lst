@@ -1,0 +1,15 @@
+/Users/Ricardo/Documents/1_Sparta Global/1_JavaDev/SortManager_Ricardo/SortManager/src/main/java/org/sparta/rt/controller/SortManager.java
+/Users/Ricardo/Documents/1_Sparta Global/1_JavaDev/SortManager_Ricardo/SortManager/src/main/java/org/sparta/rt/model/Swapper.java
+/Users/Ricardo/Documents/1_Sparta Global/1_JavaDev/SortManager_Ricardo/SortManager/src/main/java/org/sparta/rt/view/ViewManager.java
+/Users/Ricardo/Documents/1_Sparta Global/1_JavaDev/SortManager_Ricardo/SortManager/src/main/java/org/sparta/rt/exceptions/IncorrectArraySizeException.java
+/Users/Ricardo/Documents/1_Sparta Global/1_JavaDev/SortManager_Ricardo/SortManager/src/main/java/org/sparta/rt/model/binaryTree/BinaryTree.java
+/Users/Ricardo/Documents/1_Sparta Global/1_JavaDev/SortManager_Ricardo/SortManager/src/main/java/org/sparta/rt/model/SelectionSort.java
+/Users/Ricardo/Documents/1_Sparta Global/1_JavaDev/SortManager_Ricardo/SortManager/src/main/java/org/sparta/rt/model/binaryTree/BinaryTreeInterface.java
+/Users/Ricardo/Documents/1_Sparta Global/1_JavaDev/SortManager_Ricardo/SortManager/src/main/java/org/sparta/rt/model/InsertionSort.java
+/Users/Ricardo/Documents/1_Sparta Global/1_JavaDev/SortManager_Ricardo/SortManager/src/main/java/org/sparta/rt/controller/App.java
+/Users/Ricardo/Documents/1_Sparta Global/1_JavaDev/SortManager_Ricardo/SortManager/src/main/java/org/sparta/rt/exceptions/ChildNotFoundException.java
+/Users/Ricardo/Documents/1_Sparta Global/1_JavaDev/SortManager_Ricardo/SortManager/src/main/java/org/sparta/rt/model/MergeSort.java
+/Users/Ricardo/Documents/1_Sparta Global/1_JavaDev/SortManager_Ricardo/SortManager/src/main/java/org/sparta/rt/model/ArrayGenerator.java
+/Users/Ricardo/Documents/1_Sparta Global/1_JavaDev/SortManager_Ricardo/SortManager/src/main/java/org/sparta/rt/exceptions/IncorrectMaxValueException.java
+/Users/Ricardo/Documents/1_Sparta Global/1_JavaDev/SortManager_Ricardo/SortManager/src/main/java/org/sparta/rt/model/BubbleSort.java
+/Users/Ricardo/Documents/1_Sparta Global/1_JavaDev/SortManager_Ricardo/SortManager/src/main/java/org/sparta/rt/exceptions/OptionNotAvailableException.java
