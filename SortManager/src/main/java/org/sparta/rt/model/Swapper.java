@@ -6,7 +6,7 @@ public class Swapper {
 
         int placeHolder;
         placeHolder = array[x];
-        array[x] = array[y];
-        array[y] = placeHolder;
+        array[x]    = array[y];
+        array[y]    = placeHolder;
     }
 }

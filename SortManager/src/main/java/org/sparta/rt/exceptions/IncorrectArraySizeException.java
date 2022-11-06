@@ -1,6 +1,6 @@
 package org.sparta.rt.exceptions;
 
-public class IncorrectArraySizeException extends Exception{
+public class IncorrectArraySizeException extends Exception {
 
     @Override
     public String getMessage() {

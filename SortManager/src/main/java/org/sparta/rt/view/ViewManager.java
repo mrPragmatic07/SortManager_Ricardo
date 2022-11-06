@@ -99,8 +99,8 @@ public class ViewManager {
 
         while(!(answer == 1 || answer == 0)) {
 
-            System.out.println("Invalid input! Please reenter y or n");
-            answer = (char)scanner.nextInt();
+            System.out.println("Invalid input! Please reenter 1 or 0");
+            answer = scanner.nextInt();
         }
 
         if(answer == 1) result = true;
