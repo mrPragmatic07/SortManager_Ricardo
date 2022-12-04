@@ -36,13 +36,13 @@ public class BinaryTree implements BinaryTreeInterface{
         }
 
         public boolean isLeftChildEmpty() {
-            if(leftChild == null) return true;
-            else return false;
+
+            return leftChild == null;
         }
 
         public boolean isRightChildEmpty() {
-            if(rightChild == null) return true;
-            else return false;
+
+            return rightChild == null;
         }
     }
 
@@ -67,7 +67,6 @@ public class BinaryTree implements BinaryTreeInterface{
         for(int i = 1;  i<array.length; i++) {
             addElement(array[i]);
         }
-
     }
 
     public Node getRootNode() {
@@ -82,6 +81,7 @@ public class BinaryTree implements BinaryTreeInterface{
 
     @Override
     public int getNumberOfElements() {
+
         return numOfElements;
     }
 
@@ -103,6 +103,7 @@ public class BinaryTree implements BinaryTreeInterface{
 
     @Override
     public boolean findElement(int element) {
+
         Node node = findNode(element);
         if(node != null) {
             return true;
@@ -115,6 +116,7 @@ public class BinaryTree implements BinaryTreeInterface{
     public int getLeftChild(int element) {
 
         Node node = findNode(element);
+        assert node != null;
         node = node.getLeftChild();
         return node.getValue();
     }
@@ -123,6 +125,7 @@ public class BinaryTree implements BinaryTreeInterface{
     public int getRightChild(int element) {
 
         Node node = findNode(element);
+        assert node != null;
         node = node.getRightChild();
         return node.getValue();
     }
@@ -144,24 +147,8 @@ public class BinaryTree implements BinaryTreeInterface{
         getSortedTreeAsc(node.getRightChild());
     }
 
-    /*public void getSortedTreeDesc(Node node) {
-
-        // Stop printing if no node found
-        if(node == null) return;
-
-        // Get the biggest value first
-        // which is in the right subtree
-        getSortedTreeAsc(node.getRightChild());
-
-        // Print value
-        System.out.println(node.getValue());
-
-        // Continue to the smallest value
-        // which is in the left subtree
-        getSortedTreeAsc(node.getLeftChild());
-    }*/
-
     private void addNodeToTree(Node node, int element) {
+
         if(element < node.getValue()) {
             if(node.isLeftChildEmpty()) {
                 node.setLeftChild(new Node(element));
@@ -178,6 +165,7 @@ public class BinaryTree implements BinaryTreeInterface{
     }
 
     private Node findNode(int element) {
+
         Node node = rootNode;
         while(node != null) {
             if(element == node.getValue()) {
@@ -191,6 +179,5 @@ public class BinaryTree implements BinaryTreeInterface{
         }
         return null;
     }
-
 }
 
