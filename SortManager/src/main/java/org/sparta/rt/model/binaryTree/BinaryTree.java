@@ -1,40 +1,32 @@
 package org.sparta.rt.model.binaryTree;
 
-public class BinaryTree implements BinaryTreeInterface{
+public class BinaryTree implements BinaryTreeInterface {
 
-    private final Node rootNode;
-    private int numOfElements;
-
+    // Inner Class Node
     public static class Node {
 
+        // Fields
         private final int value;
         private Node leftChild;
         private Node rightChild;
 
+        // Getters
+        public int  getValue()      {return value;}
+        public Node getLeftChild()  {return leftChild;}
+        public Node getRightChild() {return rightChild;}
+
+        // Setters
+        public void setLeftChild  (Node leftChild)  {this.leftChild = leftChild;}
+        public void setRightChild (Node rightChild) {this.rightChild = rightChild;}
+
+        // Constructors
         public Node(int value) {
+
             this.value = value;
         }
 
-        public int getValue() {
-            return value;
-        }
 
-        public Node getLeftChild() {
-            return leftChild;
-        }
-
-        public void setLeftChild(Node leftChild) {
-            this.leftChild = leftChild;
-        }
-
-        public Node getRightChild() {
-            return rightChild;
-        }
-
-        public void setRightChild(Node rightChild) {
-            this.rightChild = rightChild;
-        }
-
+        // Methods
         public boolean isLeftChildEmpty() {
 
             return leftChild == null;
@@ -46,13 +38,11 @@ public class BinaryTree implements BinaryTreeInterface{
         }
     }
 
-    public static void executeBinaryTree(int[] array) {
+    // Fields
+    private final Node rootNode;
+    private int numOfElements;
 
-        BinaryTree tree = new BinaryTree(array);
-        System.out.println("Sorted Array:");
-        tree.getSortedTreeAsc(tree.rootNode);
-    }
-
+    // Constructor
     public BinaryTree(int element) {
 
         this.rootNode = new Node(element);
@@ -69,7 +59,16 @@ public class BinaryTree implements BinaryTreeInterface{
         }
     }
 
+    // Methods
+    public static void executeBinaryTree(int[] array) {
+
+        BinaryTree tree = new BinaryTree(array);
+        System.out.println("Sorted Array:");
+        tree.getSortedTreeAsc(tree.rootNode);
+    }
+
     public Node getRootNode() {
+
         return rootNode;
     }
 
@@ -105,11 +104,7 @@ public class BinaryTree implements BinaryTreeInterface{
     public boolean findElement(int element) {
 
         Node node = findNode(element);
-        if(node != null) {
-            return true;
-        } else {
-            return false;
-        }
+        return node != null;
     }
 
     @Override
@@ -132,18 +127,9 @@ public class BinaryTree implements BinaryTreeInterface{
 
     public void getSortedTreeAsc(Node node) {
 
-        // Stop printing if no node found
         if(node == null) return;
-
-        // Get the smallest key first
-        // which is in the left subtree
         getSortedTreeAsc(node.getLeftChild());
-
-        // Print value
         System.out.println(node.getValue());
-
-        // Continue to the greatest key
-        // which is in the right subtree
         getSortedTreeAsc(node.getRightChild());
     }
 
